@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+    />
+  </head>
+  <body>
+    <nav id="nav-menu">
+      <div class="logo"><img src="./assets/logo.png" alt="" /></div>
+      <div class="nav-links">
+        <div class="nav-link-logo"><img src="./assets/logo.png" alt="" /></div>
+        <a href="#home" class="nav-link home">Home</a>
+        <a href="#about" class="nav-link about">About</a>
+        <a href="#skills" class="nav-link skills">Skills</a>
+        <a href="#projects" class="nav-link projects">Projects</a>
+        <a href="#contact" class="nav-link contact">Contact </a>
+
+        <button class="nav-link resume">Resume</button>
+      </div>
+      <div class="hamburger"><i class="fa-solid fa-bars"></i></div>
+    </nav>
+    <section id="home">
+      <div class="introduction">
+        <h1 id="user-detail-name">Mohd Faisal</h1>
+        <p id="user-detail-intro">
+          An Enthusiastic Web Develope and keen problem solver
+        </p>
+      </div>
+      <div id="home-wrapper">
+        <div class="left-details">
+          <div class="left-details-introduction">
+            <h5>Introduction</h5>
+            <p>
+              My professional focus lies in web development, complemented by a
+              genuine passion for algorithms and a sharp acumen for tackling
+              intricate challenges.
+            </p>
+          </div>
+          <div class="left-details-contact">
+            <h5>Contact</h5>
+            <p>- faisalmd25121999@gmail.com</p>
+            <p>- Ph: 9136889394</p>
+          </div>
+          <div>
+            <h5>Skills</h5>
+            <p>- Website Design</p>
+            <p>
+              - Mastering algorithmic intricacies while nurturing an unceasing
+              thirst for knowledge
+            </p>
+            <p>- Solving Competitive Programming Problems</p>
+          </div>
+          <div></div>
+        </div>
+        <div class="mid-image" id="home-img">
+          <div class="image">
+            <img src="./assets/Me.jpg" alt="" />
+          </div>
+        </div>
+        <div class="right-details">
+          <div class="right-details-major-projects">
+            <h5>Major Projects</h5>
+            <h3>6+</h3>
+          </div>
+          <div class="right-details-minor-projects">
+            <h5>Minor Projects</h5>
+            <h3>50+</h3>
+          </div>
+          <di class="right-details-leetcode">
+            <h5>Leetcode</h5>
+            <h3>600+</h3></di
+          >
+
+          <div class="right-details-OJ">
+            <h5>Masai OJ</h5>
+            <p>500+</p>
+          </div>
+          <div class="right-details-expertise">
+            <h5>Expertise</h5>
+            <p>
+              <span><img src="assets/html.png" alt="" /></span>
+              <span><img src="assets/css.png" alt="" /></span>
+              <span><img src="assets/js.png" alt="" /></span>
+              <span><img src="assets/react.png" alt="" /></span>
+              <span><img src="assets/nodejs.png" alt="" /></span>
+              <span><img src="assets/mongo.png" alt="" /></span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div id="home-bottom-profiles">
+        <a href=""><img src="assets/leetcode.png" alt="" /></a>
+        <a href=""><img src="./assets/codeforces.png" alt="" /></a>
+        <a href=""><img src="./assets/linkedin.png" alt="" /></a>
+        <a href=""><img src="./assets/github.png" alt="" /></a>
+        <a href=""><img src="./assets/geeksforgeeks.png" alt="" /></a>
+      </div>
+    </section>
+
+    <section id="about" class="about-section">
+      <div class="container about-container">
+        <div class="about-image"></div>
+        <div class="about-details">
+          <h1>About Me</h1>
+          <div class="about-cards">
+            <article class="about-card"></article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <!-- Each project card in the Projects section should have class="project-card" and the following:
+    Image of the project
+    Title : class="project-title"
+Lorem.    Description : class="project-description"
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, perspiciatis?    Tech stack used : class="project-tech-stack"
+    Link to GitHub repository : class="project-github-link"
+    Deployed link or video link : class="project-deployed-link" -->
+    <section class="projects" id="projects">
+      <h1>Best Projects</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, ducimus.
+      </p>
+      <ul class="project-categories">
+        <li class="active" data-filter=".best">All</li>
+        <li data-filter=".front-end">Front-End</li>
+        <li data-filter=".react">React</li>
+      </ul>
+      <div class="container projects-container">
+        <article class="project-card best mix" data-order="1">
+          <div class="project-image">
+            <img class="project-image" src="./assets/project1.jpg" alt="" />
+          </div>
+          <h3 class="project-title">Lorem.</h3>
+          <p class="project-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia,
+            perspiciatis?
+          </p>
+          <div class="project-links">
+            <a href="" class="project-github-link">Github</a>
+            <a href="" class="project-deployed-link">Live</a>
+          </div>
+        </article>
+        <article class="project-card mix best" data-order="2">
+          <div class="project-image">
+            <img class="project-image" src="./assets/project1.jpg" alt="" />
+          </div>
+          <h3 class="project-title">Lorem.</h3>
+          <p class="project-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia,
+            perspiciatis?
+          </p>
+          <div class="project-links">
+            <a href="" class="project-github-link">Github</a>
+            <a href="" class="project-deployed-link">Live</a>
+          </div>
+        </article>
+        <article class="project-card best mix" data-order="3">
+          <div class="project-image">
+            <img class="project-image" src="./assets/project1.jpg" alt="" />
+          </div>
+          <h3 class="project-title">Lorem.</h3>
+          <p class="project-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia,
+            perspiciatis?
+          </p>
+          <div class="project-links">
+            <a href="" class="project-github-link">Github</a>
+            <a href="" class="project-deployed-link">Live</a>
+          </div>
+        </article>
+        <article class="project-card mix best" data-order="4">
+          <div class="project-image">
+            <img class="project-image" src="./assets/project1.jpg" alt="" />
+          </div>
+          <h3 class="project-title">Lorem.</h3>
+          <p class="project-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia,
+            perspiciatis?
+          </p>
+          <div class="project-links">
+            <a href="" class="project-github-link">Github</a>
+            <a href="" class="project-deployed-link">Live</a>
+          </div>
+        </article>
+        <article class="project-card mix front-end" data-order="5">
+          <div class="project-image">
+            <img class="project-image" src="./assets/project1.jpg" alt="" />
+          </div>
+          <h3 class="project-title">Lorem.</h3>
+          <p class="project-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia,
+            perspiciatis?
+          </p>
+          <div class="project-links">
+            <a href="" class="project-github-link">Github</a>
+            <a href="" class="project-deployed-link">Live</a>
+          </div>
+        </article>
+        <article class="project-card mix front-end" data-order="6">
+          <div class="project-image">
+            <img class="project-image" src="./assets/project1.jpg" alt="" />
+          </div>
+          <h3 class="project-title">Lorem.</h3>
+          <p class="project-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia,
+            perspiciatis?
+          </p>
+          <div class="project-links">
+            <a href="" class="project-github-link">Github</a>
+            <a href="" class="project-deployed-link">Live</a>
+          </div>
+        </article>
+        <article class="project-card mix front-end" data-order="7">
+          <div class="project-image">
+            <img class="project-image" src="./assets/project1.jpg" alt="" />
+          </div>
+          <h3 class="project-title">Lorem.</h3>
+          <p class="project-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia,
+            perspiciatis?
+          </p>
+          <div class="project-links">
+            <a href="" class="project-github-link">Github</a>
+            <a href="" class="project-deployed-link">Live</a>
+          </div>
+        </article>
+        <article class="project-card mix react" data-order="8">
+          <div class="project-image">
+            <img class="project-image" src="./assets/project1.jpg" alt="" />
+          </div>
+          <h3 class="project-title">Lorem.</h3>
+          <p class="project-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia,
+            perspiciatis?
+          </p>
+          <div class="project-links">
+            <a href="" class="project-github-link">Github</a>
+            <a href="" class="project-deployed-link">Live</a>
+          </div>
+        </article>
+      </div>
+    </section>
+    <section id="contact" class="contact">
+      <h1 class="contact-heading">Contact Me</h1>
+      <div class="contact-container container">
+        <ul>
+          <li>
+            <a
+              href="mailto:faisalmd25121999@gmail.com"
+              class="contact-email"
+              target="_blank"
+              ><i class="fa-regular fa-envelope"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://github.com/Faisal25DEC"
+              class="contact-github"
+              target="_blank"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="mailto:faisalmd25121999@gmail.com"
+              class="contact-email"
+              target="_blank"
+              ><i class="fa-solid fa-phone"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/faisal25121999/"
+              class="contact-linkedin"
+              target="_blank"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+          </li>
+        </ul>
+        <form action="" class="contact-form">
+          <input type="text" name="" id="" placeholder="Full Name" />
+          <input type="email" name="" id="" placeholder="Email Address" />
+          <textarea rows="7" placeholder="Message"></textarea>
+          <button type="submit" class="btn">Send</button>
+        </form>
+      </div>
+    </section>
+  </body>
+  <script src="./mix/dist/mixitup.min.js"></script>
+  <script src="script.js"></script>
+</html>
