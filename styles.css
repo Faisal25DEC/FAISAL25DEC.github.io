@@ -630,7 +630,7 @@ li {
   font-weight: 600;
   margin-bottom: 2.5rem;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 990px) {
   #nav-menu {
     justify-content: space-between;
     width: 94%;
