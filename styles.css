@@ -107,10 +107,6 @@ ul {
   list-style: none;
 }
 
-a {
-  text-decoration: none;
-}
-
 img {
   max-width: 100%;
   height: auto;
@@ -195,11 +191,18 @@ li {
 }
 
 #nav-menu {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 1rem;
   margin-top: 0.7rem;
+  top: -1.5%;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding-top: 0.3rem;
 }
 #nav-menu > .hamburger {
   display: none;
@@ -220,7 +223,9 @@ li {
   text-decoration: none;
   color: black;
 }
-
+#home {
+  margin-top: 5%;
+}
 #home-wrapper {
   display: flex;
   justify-content: center;
