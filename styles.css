@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&family=Roboto:wght@400;500&display=swap");
 * {
   margin: 0;
   font-family: "Poppins";
@@ -30,7 +30,117 @@
   --color-gray-800: hsl(var(--primary-hue), 0%, 15%);
   --color-gray-900: hsl(var(--primary-hue), 0%, 5%);
 }
+:root {
+  --header-height: 3.5rem;
 
+  /*========== Colors ==========*/
+  /*Color mode HSL(hue, saturation, lightness)*/
+  --first-color: hsl(207, 65%, 65%);
+  --title-color: hsl(207, 4%, 16%);
+  --text-color: hsl(207, 4%, 28%);
+  --text-color-light: hsl(207, 4%, 56%);
+  --body-color: hsl(207, 4%, 99%);
+  --container-color: hsl(207, 4%, 95%);
+
+  /* Change the first number */
+  /* Blue: 207 - Purple: 250 - Pink: 356 - Teal: 174 */
+  --gradient-color: linear-gradient(
+    180deg,
+    hsla(207, 48%, 72%, 0),
+    hsla(207, 65%, 65%, 1)
+  );
+
+  /*========== Font and typography ==========*/
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --body-font: "Roboto", sans-serif;
+  --title-font: "Lora", serif;
+  --biggest-font-size: 1.5rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.813rem;
+  --smaller-font-size: 0.75rem;
+  --tiny-font-size: 0.625rem;
+
+  /*========== Font weight ==========*/
+  --font-medium: 500;
+  --font-semi-bold: 600;
+
+  /*========== z index ==========*/
+  --z-normal: 1;
+  --z-tooltip: 10;
+  --z-fixed: 100;
+}
+
+/* ---------------base -------------- */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background-color: var(--body-color);
+  color: var(--text-color);
+  transition: background 0.4s; /* for dark mode animation */
+}
+
+h1,
+h2,
+h3 {
+  color: var(--title-color);
+  font-family: var(--title-font);
+  font-weight: var(--font-medium);
+}
+p {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*=============== THEME ===============*/
+
+/*========== Variables Dark theme ==========*/
+body.dark-theme {
+  --title-color: hsl(207, 4%, 95%);
+  --text-color: hsl(207, 4%, 65%);
+  --body-color: hsl(207, 4%, 10%);
+  --container-color: hsl(207, 4%, 12%);
+}
+
+/*========== 
+    Color changes in some parts of 
+    the website, in light theme
+==========*/
+
+a {
+  text-decoration: none;
+}
+.section-title {
+  text-align: center;
+}
+.section-subtitle {
+  display: block;
+  text-align: center;
+}
 body {
   background-color: var(--color-gray-100);
   color: var(--color-gray-800);
@@ -44,6 +154,46 @@ li {
 .container {
   margin: auto;
 }
+.container {
+  max-width: 1024px;
+  margin-inline: 1.5rem;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.section {
+  padding-block: 2.5rem;
+}
+
+.section-border {
+  border-bottom: 1px solid var(--title-color);
+  padding-bottom: 3.5rem;
+}
+
+.section-title,
+.section-subtitle {
+  text-align: center;
+}
+
+.section-title {
+  font-size: var(--h1-font-size);
+  font-weight: var(--font-semi-bold);
+}
+
+.section-subtitle {
+  display: block;
+  font-size: var(--small-font-size);
+  color: var(--text-color-light);
+  margin-bottom: 3rem;
+}
+
+.main {
+  overflow: hidden; /* For animation */
+}
+
 #nav-menu {
   display: flex;
   align-items: center;
@@ -152,9 +302,104 @@ li {
   width: 2rem;
   height: 2rem;
 }
+.home-end {
+  display: block;
+
+  width: 80%;
+  margin: auto;
+  margin-top: 3rem;
+  border: solid 1px rgb(195, 194, 194);
+}
+
+/* ===================SKILLS ==================== */
+
+.skills-container {
+  row-gap: 3.5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem 3rem;
+  width: 80%;
+  margin: auto;
+}
+
+.skills-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: var(--font-semi-bold);
+  margin-bottom: 2.5rem;
+}
+
+.skills-title i {
+  font-size: 1.2rem;
+  font-weight: initial;
+}
+
+.skills-info,
+.skills-data,
+.skills-blob {
+  display: grid;
+}
+.skills-info {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem 2rem;
+}
+.skills-data {
+  justify-content: center;
+  text-align: center;
+}
+.skills-blob {
+  width: 80px;
+  height: 100px;
+  background-color: var(--container-color);
+  border-radius: 3rem;
+  place-items: center;
+  margin-bottom: 1rem;
+}
+.skills-blob img {
+  width: 40px;
+}
+.skills-name {
+  font-size: var(--small-font-size);
+  margin-bottom: 0.25rem;
+}
+.skills-subtitle {
+  font-size: var(--tiny-font-size);
+  color: var(--text-color-light);
+  font-weight: 700;
+}
+.skills-blob:hover img {
+  animation: bounce-skills 0.6s;
+}
+@keyframes bounce-skills {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translateY(-6px);
+  }
+  40% {
+    transform: translate(0);
+  }
+  60% {
+    transform: translateY(-3px);
+  }
+  80% {
+    transform: translate(0);
+  }
+}
 
 /* Projects */
-
+.project-header-title {
+  margin-top: 3rem;
+  text-align: center;
+  font-size: 2rem;
+}
+.project-header-desc {
+  text-align: center;
+}
 .project-categories {
   display: flex;
   gap: 1rem;
@@ -177,11 +422,15 @@ li {
   background-color: var(--color-primary);
   color: var(--color-gray-100);
 }
+.project-categories li.active {
+  background-color: var(--color-primary);
+  color: var(--color-gray-100);
+}
 .projects-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(24rem, 1fr));
   gap: 3.5rem;
-  width: 95%;
+  width: 96%;
   margin: auto;
 }
 .project-card {
@@ -198,10 +447,15 @@ li {
 
 .project-image {
   height: auto;
-  max-height: 12rem;
+  min-height: 13rem;
   margin-bottom: 1.5rem;
   border-radius: var(--radius-4);
   overflow: hidden;
+}
+.splide__slide img {
+  width: 100%;
+  height: auto;
+  min-height: 13rem;
 }
 
 .project-card p {
@@ -219,86 +473,164 @@ li {
     opacity: 1;
   }
 }
-#contact {
-  background-color: var(--color-primary);
-  padding: 6rem 0rem;
-  margin-top: 1.5rem;
+.project-end {
+  width: 80%;
+  margin: auto;
+  margin-top: 3rem;
 }
-.contact-container {
-  width: 50%;
-
-  display: grid;
-  grid-template-columns: 1fr 9fr;
-  gap: 6rem;
+#contact {
   margin-top: 2rem;
 }
-#contact ul {
+
+.contact-container {
+  row-gap: 3.5rem;
+  grid-template-columns: 1fr 2fr;
+  margin: auto;
+  margin-top: 2rem;
+}
+.contact-title {
   display: flex;
-  flex-direction: column;
+  padding: 0rem 2rem;
   align-items: center;
-  justify-content: center;
-  gap: 1.4rem;
+  column-gap: 0.5rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 2.2rem;
 }
-#contact ul > li > a {
-  background-color: var(--color-gray-100);
-  padding: 0.3rem 0.8rem;
-  display: block;
-  text-align: center;
-  color: var(--color-gray-900);
-  font-size: 1.4rem;
-  border-radius: var(--radius-3);
-  transition: var(--transtion);
-}
-#contact ul > li > a:hover {
-  background-color: var(--color-gray-800);
-  color: var(--color-gray-200);
-}
-.contact-heading {
-  font-size: 2.5rem;
-  text-align: center;
-  color: whitesmoke;
-}
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-  height: 100%;
-}
-.contact-form input,
-.contact-form textarea {
-  background: transparent;
-  border: 1px solid var(--color-gray-300);
-  border-radius: var(--radius-3);
-  padding: 1rem;
-  color: var(--color-gray-100);
-  resize: none !important;
-  outline: none;
-}
-.contact-form button {
-  width: 9rem;
-  height: 3rem;
-  border-radius: 15px;
-  color: black;
-  background-color: white;
-  border: 1px solid grey;
-  transition: all 0.4s ease-in-out;
-}
-.contact-form button:hover {
-  cursor: pointer;
-  color: rgb(48, 48, 48);
-  font-size: 16px;
-  border: 2px solid grey;
-  height: 3.2rem;
-  width: 9.2rem;
-  letter-spacing: 0.7px;
-  font-weight: bold;
-}
-.contact-form input::placeholder,
-.contact-form textarea::placeholder {
-  color: white;
+.contact-title i {
+  font-size: 1.5rem;
+  font-weight: initial;
 }
 
-@media screen and (max-width: 950px) {
+.contact-info,
+.contact-data,
+.contact-form {
+  display: grid;
+}
+.contact-info {
+  row-gap: 2rem;
+}
+.contact-data {
+  row-gap: 0.75rem;
+}
+.contact-data-info {
+  font-size: 0.73rem;
+  color: grey;
+  font-weight: 600;
+}
+.contact-data-title {
+  font-size: 1.4rem;
+  color: var(--text-color-light);
+}
+.contact-data-title img {
+  width: 1.75rem;
+  height: 1.75rem;
+}
+.contact-data-info {
+  font-size: var(--small-font-size);
+  font-family: var(--title-font);
+  color: var(--title-color);
+}
+.contact-button {
+  width: max-content;
+  display: inline-flex;
+  align-items: center;
+  column-gap: 0.5rem;
+  color: var(--title-color);
+  font-size: var(--small-font-size);
+}
+.contact-button i {
+  font-size: 1rem;
+  transition: transform 0.3s;
+}
+.contact-button:hover i {
+  transform: translateX(0.25rem);
+}
+.contact-form {
+  position: relative;
+  row-gap: 1.8rem;
+}
+.contact-form-div {
+  position: relative;
+  height: 4rem;
+}
+.contact-form-input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid var(--text-color-light);
+  border-radius: 2rem;
+  padding: 1.5rem;
+  font-size: var(--small-font-size);
+  font-size: var(--title-font);
+  background: none;
+  outline: none;
+  z-index: 1;
+}
+.contact-form-tag {
+  position: absolute;
+  top: -0.75rem;
+  left: 1.25rem;
+  z-index: 10;
+  background-color: var(--body-color);
+  color: var(--title-color);
+  font-size: var(--smaller-font-size);
+  font-weight: var(--font-medium);
+  padding: 0.35rem;
+}
+.contact-form-area {
+  height: 12rem;
+}
+.contact-form-area textarea {
+  resize: none;
+}
+.contact-form .contact-button {
+  border: none;
+  background: none;
+  font-size: var(--h2-font-size);
+  font-family: var(--title-font);
+  font-weight: var(--font-semi-bold);
+  cursor: pointer;
+  outline: none;
+  margin-right: 0.75rem;
+  margin-bottom: 0.75rem;
+  margin-left: auto;
+}
+.contact-form .contact-button i {
+  font-size: 1.5rem;
+  font-weight: initial;
+}
+.contact-message {
+  font-size: var(--small-font-size);
+  position: absolute;
+  bottom: 2.8rem;
+  left: 1.5rem;
+}
+.color-red {
+  color: hsl(4, 71%, 50%);
+}
+.color-blue {
+  color: hsl(207, 56%, 45%);
+  font-weight: bold;
+}
+.contact .section-title {
+  font-size: 35px;
+}
+.contact .section-subtitle {
+  font-size: 17.5px;
+}
+.contact-title-left {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 1.3rem;
+  text-align: left;
+  font-weight: 600;
+  margin-bottom: 2.5rem;
+}
+@media screen and (max-width: 1024px) {
   #nav-menu {
     justify-content: space-between;
     width: 94%;
@@ -384,4 +716,80 @@ li {
     height: 2rem;
     margin-left: 0.3rem;
   }
+
+  .skills-container {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 5rem;
+  }
+
+  .contact-container {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-info {
+    width: 60%;
+    margin: auto;
+    display: grid;
+    font-weight: 600;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contact-info .contact-data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-title-left {
+    justify-content: center;
+  }
+  .contact-button {
+    margin: auto;
+  }
+}
+@media screen and (max-width: 500px) {
+  .contact-info {
+    width: 100%;
+    margin: auto;
+    display: grid;
+    font-weight: 500;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .contact-title-left {
+    justify-content: center;
+  }
+  .contact-title {
+    justify-content: center;
+  }
+  .contact-button {
+    margin: auto;
+  }
+}
+/*=============== REUSABLE CSS CLASSES ===============*/
+.container {
+  margin: auto;
+}
+.container {
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.section {
+  padding-block: 2.5rem;
+}
+
+.section-border {
+  border-bottom: 1px solid var(--title-color);
+  padding-bottom: 3.5rem;
+}
+
+.section-title,
+.section-subtitle {
+  text-align: center;
+  font-size: 2.3rem;
+}
+.section-subtitle {
+  font-size: 1rem;
 }

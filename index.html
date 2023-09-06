@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="styles.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -16,6 +15,18 @@
       rel="stylesheet"
       href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      href="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <nav id="nav-menu">
@@ -121,6 +132,111 @@
         </div>
       </div>
     </section>
+    <hr class="home-end" />
+
+    <!-- =====================SKILLS ================ -->
+    <!--    
+   Each skills card in the Skills section should have class="skills-card" and the following:
+    Image : class="skills-card-img"
+    Name : class="skills-card-name"
+    -->
+
+    <section class="skills section" id="skills">
+      <h2 class="section-title">Skills</h2>
+      <span class="section-subtitle">My Expertise</span>
+      <div class="skills-container container gird section-border">
+        <div class="skills-content">
+          <h3 class="skills-title">
+            <i class="ri-braces-fill"></i> Front-End Skills
+          </h3>
+          <div class="skills-info">
+            <div class="skills-data skills-card">
+              <div class="skills-blob skills-card-img">
+                <img src="./assets/html.svg" alt="" />
+              </div>
+              <h3 class="skills-card-name">HTML</h3>
+              <span class="skills-subtitle">Intermediate</span>
+            </div>
+
+            <div class="skills-data skills-card">
+              <div class="skills-blob skills-card-img">
+                <img src="./assets/css.svg" alt="" />
+              </div>
+              <h3 class="skills-card-name">CSS</h3>
+              <span class="skills-subtitle">Intermediate</span>
+            </div>
+
+            <div class="skills-data skills-card">
+              <div class="skills-blob skills-card-img">
+                <img src="./assets/js.svg" alt="" />
+              </div>
+              <h3 class="skills-card-name">javascript</h3>
+              <span class="skills-subtitle">Intermediate</span>
+            </div>
+
+            <div class="skills-data skills-card">
+              <div class="skills-blob skills-card-img">
+                <img src="./assets/react.svg" alt="" />
+              </div>
+              <h3 class="skills-card-name">React</h3>
+              <span class="skills-subtitle">Intermediate</span>
+            </div>
+
+            <div class="skills-data skills-card">
+              <div class="skills-blob skills-card-img">
+                <img src="./assets/bootstrap.svg" alt="" />
+              </div>
+              <h3 class="skills-card-name">Bootstrap</h3>
+              <span class="skills-subtitle">Basic</span>
+            </div>
+
+            <div class="skills-data skills-card">
+              <div class="skills-blob skills-card-img">
+                <img src="./assets/typescript.svg" alt="" />
+              </div>
+              <h3 class="skills-card-name">Typescript</h3>
+              <span class="skills-subtitle">Basic</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills-content">
+          <h3 class="skills-title">
+            <i class="ri-braces-fill"></i> Backend Skills
+          </h3>
+          <div class="skills-info">
+            <div class="skills-data skills-card">
+              <div class="skills-blob skills-card-img">
+                <img src="./assets/nodejs.svg" alt="" />
+              </div>
+              <h3 class="skills-card-name">Node.js</h3>
+              <span class="skills-subtitle">Intermediate</span>
+            </div>
+            <div class="skills-data skills-card">
+              <div class="skills-blob skills-card-img">
+                <img src="./assets/mongo.svg" alt="" />
+              </div>
+              <h3 class="skills-card-name">MongoDb</h3>
+              <span class="skills-subtitle">Intermediate</span>
+            </div>
+            <div class="skills-data skills-card">
+              <div class="skills-blob skills-card-img">
+                <img src="./assets/firebase.svg" alt="" />
+              </div>
+              <h3 class="skills-card-name">Firebase</h3>
+              <span class="skills-subtitle">Intermediate</span>
+            </div>
+            <div class="skills-data skills-card">
+              <div class="skills-blob skills-card-img">
+                <img src="./assets/git.svg" alt="" />
+              </div>
+              <h3 class="skills-card-name">Git</h3>
+              <span class="skills-subtitle">Basic</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Projects -->
     <!-- Each project card in the Projects section should have class="project-card" and the following:
@@ -131,8 +247,8 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, perspiciatis?    
     Link to GitHub repository : class="project-github-link"
     Deployed link or video link : class="project-deployed-link" -->
     <section class="projects" id="projects">
-      <h1>Best Projects</h1>
-      <p>
+      <h1 class="project-header-title">Best Projects</h1>
+      <p class="project-header-desc">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, ducimus.
       </p>
       <ul class="project-categories">
@@ -140,10 +256,28 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, perspiciatis?    
         <li data-filter=".front-end">Front-End</li>
         <li data-filter=".react">React</li>
       </ul>
-      <div class="container projects-container">
+      <div class="projects-container">
         <article class="project-card best mix" data-order="1">
           <div class="project-image">
-            <img class="project-image" src="./assets/project1.jpg" alt="" />
+            <section
+              id="image-carousel"
+              class="splide"
+              aria-label="Beautiful Images"
+            >
+              <div class="splide__track">
+                <ul class="splide__list">
+                  <li class="splide__slide">
+                    <img src="./assets/myntra1.png" alt="" />
+                  </li>
+                  <li class="splide__slide">
+                    <img src="./assets/myntra2.png" alt="" />
+                  </li>
+                  <li class="splide__slide">
+                    <img src="./assets/project3.jpg" alt="" />
+                  </li>
+                </ul>
+              </div>
+            </section>
           </div>
           <h3 class="project-title">Lorem.</h3>
           <p class="project-description">
@@ -157,7 +291,25 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, perspiciatis?    
         </article>
         <article class="project-card mix best" data-order="2">
           <div class="project-image">
-            <img class="project-image" src="./assets/project1.jpg" alt="" />
+            <section
+              id="image-carousel1"
+              class="splide"
+              aria-label="Beautiful Images"
+            >
+              <div class="splide__track">
+                <ul class="splide__list">
+                  <li class="splide__slide">
+                    <img src="./assets/myntra3.png" alt="" />
+                  </li>
+                  <li class="splide__slide">
+                    <img src="./assets/myntra2.png" alt="" />
+                  </li>
+                  <li class="splide__slide">
+                    <img src="./assets/project3.jpg" alt="" />
+                  </li>
+                </ul>
+              </div>
+            </section>
           </div>
           <h3 class="project-title">Lorem.</h3>
           <p class="project-description">
@@ -255,52 +407,115 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, perspiciatis?    
         </article>
       </div>
     </section>
+    <hr class="project-end" />
+    <!-- =============Contact========== -->
+    <!-- Contact elements must have the following IDs:
+GitHub profile link : id="contact-github"
+LinkedIn profile link : id="contact-linkedin"
+Phone number : id="contact-phone"
+Email address : id="contact-email" -->
+
     <section id="contact" class="contact">
-      <h1 class="contact-heading">Contact Me</h1>
-      <div class="contact-container container">
-        <ul>
-          <li>
-            <a
-              href="mailto:faisalmd25121999@gmail.com"
-              class="contact-email"
-              target="_blank"
-              ><i class="fa-regular fa-envelope"></i
-            ></a>
-          </li>
-          <li>
-            <a
-              href="https://github.com/Faisal25DEC"
-              class="contact-github"
-              target="_blank"
-              ><i class="fa-brands fa-github"></i
-            ></a>
-          </li>
-          <li>
-            <a
-              href="mailto:faisalmd25121999@gmail.com"
-              class="contact-email"
-              target="_blank"
-              ><i class="fa-solid fa-phone"></i
-            ></a>
-          </li>
-          <li>
-            <a
-              href="https://www.linkedin.com/in/faisal25121999/"
-              class="contact-linkedin"
-              target="_blank"
-              ><i class="fa-brands fa-linkedin"></i
-            ></a>
-          </li>
-        </ul>
-        <form action="" class="contact-form">
-          <input type="text" name="" id="" placeholder="Full Name" />
-          <input type="email" name="" id="" placeholder="Email Address" />
-          <textarea rows="7" placeholder="Message"></textarea>
-          <button type="submit" class="btn">Send</button>
-        </form>
+      <h2 class="section-title">Contact Me</h2>
+      <span class="section-subtitle"> Get in Touch </span>
+
+      <div class="contact-container container grid section-border">
+        <div class="contact-content">
+          <h3 class="contact-title-left">
+            <i class="ri-chat-3-line"></i> Talk To me
+          </h3>
+          <div class="contact-info">
+            <div class="contact-data" id="contact-email">
+              <span class="contact-data-title">
+                <img src="./assets/mail.gif" alt="" />
+              </span>
+              <a
+                href="mailto:faisalmd25121999@gmail.com"
+                target="_blank"
+                class="contact-data-info"
+                >faisalmd25121999@gmail.com</a
+              >
+            </div>
+            <div class="contact-data">
+              <span class="contact-data-title" id="contact-phone">
+                <img src="./assets/phone.gif" alt="" />
+              </span>
+              <a
+                href="https://wa.me/9136889394"
+                class="contact-data-info"
+                target="_blank"
+                >+91 9136889394</a
+              >
+            </div>
+            <div class="contact-data" id="contact-github">
+              <span class="contact-data-title">
+                <img src="./assets/github.png" alt="" />
+              </span>
+              <a href="" class="contact-button contact-data-info"
+                >Faisal25DEC</a
+              >
+            </div>
+            <div class="contact-data" id="contact-linkedin">
+              <span class="contact-data-title">
+                <img src="./assets/linkedin.png" alt="" />
+              </span>
+              <a href="" class="contact-button contact-data-info"
+                >faisalmd25121999</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-content">
+          <h3 class="contact-title">
+            <i class="ri-send-plane-fill"></i> Write To me
+          </h3>
+          <form action="" class="contact-form container" id="contact-form">
+            <div class="contact-form-div">
+              <label for="" class="contact-form-tag">Name</label>
+              <input
+                type="text"
+                name="user-name"
+                class="contact-form-input"
+                id="contact-name"
+                placeholder="Write your name "
+              />
+            </div>
+            <div class="contact-form-div">
+              <label for="" class="contact-form-tag">Email</label>
+              <input
+                type="email"
+                name="user-email"
+                class="contact-form-input"
+                id="contact-email"
+                placeholder=" Write your email"
+              />
+            </div>
+            <div class="contact-form-div contact-form-area">
+              <label for="" class="contact-form-tag">Message</label>
+              <textarea
+                placeholder="Write your message"
+                name="user-project"
+                cols="30"
+                rows="10"
+                class="contact-form-input"
+                id="contact-project"
+              ></textarea>
+            </div>
+            <p class="contact-message" id="contact-message"></p>
+            <button type="submit" class="contact-button">
+              Submit<i class="ri-arrow-right-line"></i>
+            </button>
+          </form>
+        </div>
       </div>
     </section>
   </body>
   <script src="./mix/dist/mixitup.min.js"></script>
-  <script src="script.js"></script>
+  <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+  ></script>
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+  <script src="script.js" defer></script>
 </html>
