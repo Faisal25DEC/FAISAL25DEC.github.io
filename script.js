@@ -88,3 +88,18 @@ projectCategories.forEach((projectCategory) => {
     projectCategory.classList.add("active");
   });
 });
+
+const downloadFile = () => {
+  const link = document.createElement("a");
+
+  link.download = "./resume.pdf";
+  link.click();
+
+  window.open(
+    "https://drive.google.com/file/d/1PwhV7e5H6xsD396mzsT6lDPHB2bKcU32/view?usp=sharing",
+    "_blank"
+  );
+};
+document.getElementById("resume-home").addEventListener("click", () => {
+  downloadFile();
+});
