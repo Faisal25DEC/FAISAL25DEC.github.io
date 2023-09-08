@@ -100,6 +100,6 @@ const downloadFile = () => {
     "_blank"
   );
 };
-document.getElementById("resume-home").addEventListener("click", () => {
+document.getElementById("resume-button-2").addEventListener("click", () => {
   downloadFile();
 });
