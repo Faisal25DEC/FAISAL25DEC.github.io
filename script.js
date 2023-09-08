@@ -88,3 +88,8 @@ projectCategories.forEach((projectCategory) => {
     projectCategory.classList.add("active");
   });
 });
+GitHubCalendar(".calendar", "Faisal25DEC", {
+  proxy(username) {
+    return fetch(`https://your-proxy.com/github?user=Faisal25DEC`);
+  },
+}).then((r) => r.text());

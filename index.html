@@ -26,6 +26,10 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 "
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
+    />
   </head>
   <body>
     <nav id="nav-menu">
@@ -143,7 +147,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
     <section class="skills section" id="skills">
       <h2 class="section-title">Skills</h2>
       <span class="section-subtitle">My Expertise</span>
-      <div class="skills-container container gird section-border">
+      <div class="skills-container container gird">
         <div class="skills-content">
           <h3 class="skills-title">
             <i class="ri-braces-fill"></i> Front-End Skills
@@ -234,6 +238,38 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
             </div>
           </div>
         </div>
+      </div>
+
+      <div class="github-info-wrapper">
+        <div class="github-info-card">
+          <div class="github-cont-stats">
+            <h4 class="github-info-card-title">Github Streak</h4>
+            <img
+              src="https://github-readme-streak-stats.herokuapp.com?user=Faisal25DEC"
+              class="github-streak-stats"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div class="github-info-card">
+          <div class="github-rating-stats">
+            <img
+              src="https://github-readme-stats.vercel.app/api?username=Faisal25DEC&show_icons=true"
+              class="github-stats"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <!-- Loading stuff -->
+        <img
+          class="react-activity-calendar"
+          src="http://ghchart.rshah.org/Faisal25DEC"
+          alt=""
+        />
+
+        <div class="github-info-card"></div>
       </div>
     </section>
 
@@ -517,5 +553,7 @@ Email address : id="contact-email" -->
     src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
   ></script>
   <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
-  <script src="script.js"></script>
+
+  <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+  <script src="script.js" defer></script>
 </html>
