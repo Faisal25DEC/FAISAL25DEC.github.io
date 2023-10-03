@@ -103,3 +103,6 @@ const downloadFile = () => {
 document.getElementById("resume-button-2").addEventListener("click", () => {
   downloadFile();
 });
+document.getElementById("resume-button-1").addEventListener("click", () => {
+  downloadFile();
+});
