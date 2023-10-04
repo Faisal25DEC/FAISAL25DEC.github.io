@@ -335,6 +335,43 @@ li {
   border: solid 1px rgb(195, 194, 194);
 }
 
+/* ================ GITHUB AND LEETCODE SECTION ====================== */
+
+.leetcode-github-info-wrapper > h1 {
+  font-size: 2.2rem;
+  text-align: center;
+  font-weight: bold;
+}
+.stats-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  margin-top: 3rem;
+}
+.stats-second > div {
+  flex-basis: 33%;
+}
+.stats-second #github-top-langs {
+  width: 70%;
+}
+.stats-third {
+  margin: auto;
+  margin-top: 4rem;
+}
+.stats-third h4 {
+  text-align: center;
+}
+.stats-third img {
+  display: block;
+  margin: auto;
+  margin-top: 0.5rem;
+  height: 12rem;
+  width: 65%;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 2rem;
+  border-radius: 15px;
+}
 /* ===================SKILLS ==================== */
 
 .skills-container {
@@ -751,6 +788,7 @@ li {
   width: 80%;
   margin: auto;
   padding-bottom: 4rem;
+  margin-top: 4rem;
 }
 .progress-bars {
   display: grid;
@@ -1041,6 +1079,16 @@ li {
   .right-about {
     margin-left: 0;
   }
+  .stats-block {
+    flex-direction: column;
+  }
+  .stats-third img {
+    width: 90%;
+    height: auto;
+  }
+  .stats-second #github-top-langs {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -1146,4 +1194,24 @@ li {
 }
 .main-title h2 span {
   color: var(--color-secondry);
+}
+
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-20%);
+  transition: all 1s;
+}
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+@media (prefer-reduced-motion) {
+  .hidden {
+    transition: none;
+  }
+}
+.skills-card {
+  transition-delay: var(--order) * 900ms;
 }

@@ -120,16 +120,16 @@ document.getElementById("resume-button-1").addEventListener("click", () => {
   downloadFile();
 });
 
-if (window.innerWidth <= 990) {
-  document.getElementById(
-    "user-detail-intro"
-  ).innerHTML = `Hi, I am Muhammad Faisal, an accomplished
-  <span
-    >B. Tech graduate in Computer Science and Engineering,from ADGITM,
-    Delhi</span
-  >, specializing in the dynamic realm of
-  <span> full-stack web development</span>.My skill set is underpinned
-  by a profound aptitude for tackling intricate
-  <span>algorithmic challenges</span>, showcasing a propensity for
-  unraveling problems with a solution-oriented mindset`;
-}
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    console.log("entry");
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
+    } else {
+      entry.target.classList.remove("show");
+    }
+  });
+});
+
+const hiddenElements = document.querySelectorAll(".hidden");
+hiddenElements.forEach((el) => observer.observe(el));

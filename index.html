@@ -48,7 +48,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
       </div>
       <div class="hamburger"><i class="fa-solid fa-bars"></i></div>
     </nav>
-    <section id="home">
+    <section id="home" class="hidden">
       <div class="introduction">
         <h1 id="user-detail-name">Mohd Faisal</h1>
         <p>An Enthusiastic Web Develope and keen problem solver</p>
@@ -127,7 +127,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
       </div>
     </section>
     <hr class="home-end" />
-    <section class="section sec2 about" id="about">
+    <section class="section sec2 about hidden" id="about">
       <div class="main-title">
         <h2>About Me</h2>
       </div>
@@ -178,6 +178,60 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                 <p class="small-text">DSA problems</p>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+      <div class="leetcode-github-info-wrapper">
+        <h1>My Stats</h1>
+        <div class="stats-block">
+          <div class="leetcode-stats">
+            <h4>Leetcode Stats</h4>
+            <img
+              src="https://leetcard.jacoblin.cool/Faisal_24?theme=light"
+              alt=""
+            />
+          </div>
+
+          <div class="github-info-card">
+            <div class="github-cont-stats">
+              <h4 class="github-info-card-title">Github Streak</h4>
+              <img
+                src="https://github-readme-streak-stats.herokuapp.com?user=Faisal25DEC"
+                id="github-streak-stats"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div class="stats-block stats-second">
+          <!-- Loading stuff -->
+          <div class="github-info-card">
+            <h4>Github Languages</h4>
+            <img
+              id="github-top-langs"
+              src="https://github-readme-stats.vercel.app/api/top-langs/?username=Faisal25DEC&layout=compact"
+              alt="faisal25dec"
+            />
+          </div>
+          <div class="github-info-card">
+            <div class="github-rating-stats">
+              <h4 class="github-infor-card-title">Github Stats</h4>
+              <img
+                src="https://github-readme-stats.vercel.app/api?username=Faisal25DEC&show_icons=true"
+                id="github-stats-card"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div class="stats-third">
+          <div class="github-info-card">
+            <h4>Github Calendar</h4>
+            <img
+              class="react-activity-calendar"
+              src="http://ghchart.rshah.org/Faisal25DEC"
+              alt=""
+            />
           </div>
         </div>
       </div>
@@ -250,7 +304,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
     Name : class="skills-card-name"
     -->
     <hr class="home-end" />
-    <section class="skills section" id="skills">
+    <section class="skills section hidden" id="skills">
       <h2 class="section-title">Skills</h2>
       <span class="section-subtitle">My Expertise</span>
       <div class="skills-container container gird">
@@ -260,14 +314,17 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
           </h3>
           <div class="skills-info">
             <div class="skills-data skills-card">
-              <div class="skills-blob skills-card-img">
+              <div
+                class="skills-blob skills-card-img hidden"
+                style="--order: 1"
+              >
                 <img src="./assets/html.svg" alt="" />
               </div>
               <h3 class="skills-card-name">HTML</h3>
               <span class="skills-subtitle">Intermediate</span>
             </div>
 
-            <div class="skills-data skills-card">
+            <div class="skills-data skills-card hidden" style="--order: 2">
               <div class="skills-blob skills-card-img">
                 <img src="./assets/css.svg" alt="" />
               </div>
@@ -275,7 +332,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
               <span class="skills-subtitle">Intermediate</span>
             </div>
 
-            <div class="skills-data skills-card">
+            <div class="skills-data skills-card hidden" style="--order: 3">
               <div class="skills-blob skills-card-img">
                 <img src="./assets/js.svg" alt="" />
               </div>
@@ -283,7 +340,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
               <span class="skills-subtitle">Intermediate</span>
             </div>
 
-            <div class="skills-data skills-card">
+            <div class="skills-data skills-card hidden" style="--order: 4">
               <div class="skills-blob skills-card-img">
                 <img src="./assets/react.svg" alt="" />
               </div>
@@ -291,7 +348,10 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
               <span class="skills-subtitle">Intermediate</span>
             </div>
 
-            <div class="skills-data skills-card">
+            <div
+              class="skills-data skills- hiddenc style='--order:1'ard hidden"
+              style="--order: 5"
+            >
               <div class="skills-blob skills-card-img">
                 <img src="./assets/bootstrap.svg" alt="" />
               </div>
@@ -299,7 +359,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
               <span class="skills-subtitle">Basic</span>
             </div>
 
-            <div class="skills-data skills-card">
+            <div class="skills-data skills-card hidden" style="--order: 6">
               <div class="skills-blob skills-card-img">
                 <img src="./assets/typescript.svg" alt="" />
               </div>
@@ -314,28 +374,28 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
             <i class="ri-braces-fill"></i> Backend Skills
           </h3>
           <div class="skills-info">
-            <div class="skills-data skills-card">
+            <div class="skills-data skills-card hidden" style="--order: 7">
               <div class="skills-blob skills-card-img">
                 <img src="./assets/nodejs.svg" alt="" />
               </div>
               <h3 class="skills-card-name">Node.js</h3>
               <span class="skills-subtitle">Intermediate</span>
             </div>
-            <div class="skills-data skills-card">
+            <div class="skills-data skills-card hidden" style="--order: 8">
               <div class="skills-blob skills-card-img">
                 <img src="./assets/mongo.svg" alt="" />
               </div>
               <h3 class="skills-card-name">MongoDb</h3>
               <span class="skills-subtitle">Intermediate</span>
             </div>
-            <div class="skills-data skills-card">
+            <div class="skills-data skills-card hidden" style="--order: 9">
               <div class="skills-blob skills-card-img">
                 <img src="./assets/firebase.svg" alt="" />
               </div>
               <h3 class="skills-card-name">Firebase</h3>
               <span class="skills-subtitle">Intermediate</span>
             </div>
-            <div class="skills-data skills-card">
+            <div class="skills-data skills-card hidden" style="--order: 10">
               <div class="skills-blob skills-card-img">
                 <img src="./assets/git.svg" alt="" />
               </div>
@@ -344,42 +404,6 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
             </div>
           </div>
         </div>
-      </div>
-
-      <div class="github-info-wrapper">
-        <div class="github-info-card">
-          <div class="github-cont-stats">
-            <h4 class="github-info-card-title">Github Streak</h4>
-            <img
-              src="https://github-readme-streak-stats.herokuapp.com?user=Faisal25DEC"
-              id="github-streak-stats"
-              alt=""
-            />
-          </div>
-        </div>
-
-        <div class="github-info-card">
-          <div class="github-rating-stats">
-            <img
-              src="https://github-readme-stats.vercel.app/api?username=Faisal25DEC&show_icons=true"
-              id="github-stats-card"
-              alt=""
-            />
-          </div>
-        </div>
-
-        <!-- Loading stuff -->
-        <img
-          class="react-activity-calendar"
-          src="http://ghchart.rshah.org/Faisal25DEC"
-          alt=""
-        />
-        <img
-          id="github-top-langs"
-          src="https://github-readme-stats.vercel.app/api/top-langs?username=faisal25dec&show_icons=true&locale=en&layout=compact"
-          alt="faisal25dec"
-        />
-        <div class="github-info-card"></div>
       </div>
     </section>
 
@@ -391,7 +415,7 @@ Lorem.    Description : class="project-description"
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, perspiciatis?    Tech stack used : class="project-tech-stack"
     Link to GitHub repository : class="project-github-link"
     Deployed link or video link : class="project-deployed-link" -->
-    <section class="projects" id="projects">
+    <section class="projects hidden" id="projects">
       <h1 class="project-header-title">Best Projects</h1>
       <p class="project-header-desc">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, ducimus.
@@ -596,7 +620,7 @@ LinkedIn profile link : id="contact-linkedin"
 Phone number : id="contact-phone"
 Email address : id="contact-email" -->
 
-    <section id="contact" class="contact">
+    <section id="contact" class="hidden contact slide-in-fwd-bottom">
       <h2 class="section-title">Contact Me</h2>
       <span class="section-subtitle"> Get in Touch </span>
 
@@ -692,7 +716,21 @@ Email address : id="contact-email" -->
       </div>
     </section>
   </body>
-
+  <script>
+    if (window.innerWidth <= 990) {
+      document.getElementById(
+        "user-detail-intro"
+      ).innerHTML = `Hi, I am Muhammad Faisal, an accomplished
+  <span
+    >B. Tech graduate in Computer Science and Engineering,from ADGITM,
+    Delhi</span
+  >, specializing in the dynamic realm of
+  <span> full-stack web development</span>.My skill set is underpinned
+  by a profound aptitude for tackling intricate
+  <span>algorithmic challenges</span>, showcasing a propensity for
+  unraveling problems with a solution-oriented mindset`;
+    }
+  </script>
   <script src="./mix/dist/mixitup.min.js"></script>
   <script
     type="text/javascript"
@@ -701,5 +739,5 @@ Email address : id="contact-email" -->
   <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
 
   <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
-  <script src="script.js" defer></script>
+  <script type="module" src="script.js" defer></script>
 </html>
