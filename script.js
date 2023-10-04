@@ -4,11 +4,24 @@ new Splide("#image-carousel", {
 new Splide("#image-carousel1", {
   rewind: true,
 }).mount();
+new Splide("#image-carousel2", {
+  rewind: true,
+}).mount();
+new Splide("#image-carousel3", {
+  rewind: true,
+}).mount();
 
 const hamburger = document.querySelector(".hamburger");
 const navLinks = document.querySelector(".nav-links");
 hamburger.addEventListener("click", () => {
   navLinks.classList.toggle("left");
+});
+const navLinksArray = document.querySelectorAll(".nav-link");
+
+navLinksArray.forEach((navLink) => {
+  navLink.addEventListener("click", () => {
+    navLinks.classList.remove("left");
+  });
 });
 
 //----------------mix it up------------
@@ -106,3 +119,17 @@ document.getElementById("resume-button-2").addEventListener("click", () => {
 document.getElementById("resume-button-1").addEventListener("click", () => {
   downloadFile();
 });
+
+if (window.innerWidth <= 990) {
+  document.getElementById(
+    "user-detail-intro"
+  ).innerHTML = `Hi, I am Muhammad Faisal, an accomplished
+  <span
+    >B. Tech graduate in Computer Science and Engineering,from ADGITM,
+    Delhi</span
+  >, specializing in the dynamic realm of
+  <span> full-stack web development</span>.My skill set is underpinned
+  by a profound aptitude for tackling intricate
+  <span>algorithmic challenges</span>, showcasing a propensity for
+  unraveling problems with a solution-oriented mindset`;
+}
