@@ -105,9 +105,6 @@ projectCategories.forEach((projectCategory) => {
 const downloadFile = () => {
   const link = document.createElement("a");
 
-  link.download = "faisal resume";
-  link.click();
-
   window.open(
     "https://drive.google.com/file/d/1_q2tSooJ6hqUGsSG7UBV-NU2ydAv1VNp/view?usp=sharing",
     "_blank"
