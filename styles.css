@@ -944,7 +944,7 @@ li {
   #nav-menu {
     justify-content: space-between;
     width: 100%;
-    margin: auto;
+
     height: 3.5rem;
   }
   #nav-menu > .hamburger {
@@ -977,6 +977,8 @@ li {
     left: 0;
   }
   #home {
+    width: 90%;
+    margin: auto;
     margin-top: 3rem;
   }
   #home-wrapper > .left-details {
@@ -985,7 +987,9 @@ li {
   #home-wrapper {
     flex-direction: column;
   }
-
+  #home-wrapper > .mid-image > .image {
+    height: 65vh;
+  }
   #home-wrapper > .right-details {
     flex-direction: row;
     flex-wrap: wrap;
@@ -1016,7 +1020,7 @@ li {
     font-weight: 500;
   }
   #home-wrapper > .mid-image > .image {
-    height: 75vh;
+    height: 65vh;
     border-radius: 0;
     border-top-left-radius: 10rem;
     border-top-right-radius: 10rem;
@@ -1038,11 +1042,15 @@ li {
   }
 
   .skills-container {
+    width: 90%;
+    margin: auto;
     grid-template-columns: repeat(1, 1fr);
     gap: 5rem;
   }
 
   .contact-container {
+    width: 90%;
+    margin: auto;
     grid-template-columns: 1fr;
   }
 
@@ -1078,13 +1086,25 @@ li {
   }
   .right-about {
     margin-left: 0;
+    margin: auto;
+  }
+  .leetcode-github-info-wrapper {
+    width: 90%;
+    margin: auto;
   }
   .stats-block {
     flex-direction: column;
   }
+  .stats-third {
+    padding: 0;
+    box-shadow: none;
+  }
   .stats-third img {
-    width: 90%;
-    height: auto;
+    width: 98%;
+    height: 4rem;
+    padding: 0;
+    box-shadow: none;
+    border-radius: 0;
   }
   .stats-second #github-top-langs {
     width: 100%;
