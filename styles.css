@@ -1211,7 +1211,7 @@ button.nav-link:hover {
   }
   .stats-third img {
     width: 98%;
-    height: 4rem;
+    height: 7rem;
     padding: 0;
     box-shadow: none;
     border-radius: 0;
@@ -1243,6 +1243,12 @@ button.nav-link:hover {
   }
   .contact-button {
     margin: auto;
+  }
+  .stats-third img {
+    display: block;
+    width: 98%;
+    margin: auto;
+    height: 3.7rem;
   }
 }
 /*=============== REUSABLE CSS CLASSES ===============*/
