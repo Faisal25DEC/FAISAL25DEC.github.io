@@ -108,6 +108,9 @@ body {
   color: var(--text-color);
   transition: background 0.4s; /* for dark mode animation */
 }
+a {
+  margin: 0;
+}
 
 h1,
 h2,
@@ -565,10 +568,51 @@ button.nav-link:hover {
 .project-links {
   display: flex;
   gap: 1rem;
-  margin-bottom: 1rem;
+
   /* mixitup animations*/
 }
-
+.project-title {
+  font-weight: 700;
+  font-family: "Poppins";
+}
+.project-description {
+  font-weight: 500;
+  color: rgb(86, 86, 86);
+  font-size: 15px;
+}
+.project-link-tech-stack-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.tech-stack {
+  display: flex;
+  gap: 1rem;
+}
+.tech-stack p {
+  font-size: 13px;
+  margin: 0;
+  text-align: center;
+}
+.tech-stack div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.tech-stack img {
+  height: 25px;
+  width: 25px;
+}
+.project-links > a {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+.project-links img {
+  height: 20px;
+  width: 20px;
+}
 @keyframes identifier {
   to {
     opacity: 1;

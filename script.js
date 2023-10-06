@@ -10,6 +10,9 @@ new Splide("#image-carousel2", {
 new Splide("#image-carousel3", {
   rewind: true,
 }).mount();
+new Splide("#image-carousel4", {
+  rewind: true,
+}).mount();
 
 const hamburger = document.querySelector(".hamburger");
 const navLinks = document.querySelector(".nav-links");
