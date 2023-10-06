@@ -105,11 +105,11 @@ projectCategories.forEach((projectCategory) => {
 const downloadFile = () => {
   const link = document.createElement("a");
 
-  link.download = "./resume.pdf";
+  link.download = "faisal resume";
   link.click();
 
   window.open(
-    "https://drive.google.com/file/d/1PwhV7e5H6xsD396mzsT6lDPHB2bKcU32/view?usp=sharing",
+    "https://drive.google.com/file/d/1_q2tSooJ6hqUGsSG7UBV-NU2ydAv1VNp/view?usp=sharing",
     "_blank"
   );
 };
