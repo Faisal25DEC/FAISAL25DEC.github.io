@@ -1019,6 +1019,36 @@ button.nav-link:hover {
 .hover-items .icons .icon:hover i {
   color: var(--color-primary);
 }
+#footer {
+  background-color: rgb(252, 252, 252);
+  padding-bottom: 1.5rem;
+  padding-top: 1rem;
+  margin-top: 1.5rem;
+}
+.footer-name {
+  text-align: center;
+}
+#footer-bottom-profiles {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 1.6rem;
+}
+#footer-bottom-profiles img {
+  width: 25px;
+  height: 25px;
+}
+.footer-end {
+  font-size: 13px;
+  text-align: center;
+  margin-top: 1rem;
+}
+.footer-name {
+  color: rgb(80, 80, 80);
+  font-weight: 700;
+  font-size: 28px;
+}
 
 @media screen and (max-width: 990px) {
   #nav-menu {

@@ -133,5 +133,15 @@ const observer = new IntersectionObserver((entries) => {
   });
 });
 
+document
+  .getElementById("linkedin-contact-img")
+  .addEventListener("click", () => {
+    window.open("https://www.linkedin.com/in/faisal25121999/", "_blank");
+  });
+
+document.getElementById("github-contact-img").addEventListener("click", () => {
+  window.open("https://github.com/Faisal25DEC", "_blank");
+});
+
 const hiddenElements = document.querySelectorAll(".hidden");
 hiddenElements.forEach((el) => observer.observe(el));
