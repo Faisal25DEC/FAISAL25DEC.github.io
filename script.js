@@ -116,7 +116,9 @@ document.getElementById("resume-button-2").addEventListener("click", () => {
 document.getElementById("resume-button-1").addEventListener("click", () => {
   downloadFile();
 });
-
+document.getElementById("resume-button-3").addEventListener("click", () => {
+  downloadFile();
+});
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     console.log("entry");
