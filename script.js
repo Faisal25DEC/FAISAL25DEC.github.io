@@ -109,7 +109,7 @@ const downloadFile = () => {
   const link = document.createElement("a");
 
   window.open(
-    "https://drive.google.com/file/d/11NrS4oEkxFjGxPqMFoG7CieD8qcqmAwL/view?usp=sharing",
+    "https://drive.google.com/file/d/1aiL7qjKAMfnmBYn4rJ-2Jw5kZpBun_4u/view?usp=sharing",
     "_blank"
   );
 };
