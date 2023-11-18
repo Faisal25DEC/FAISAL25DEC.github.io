@@ -529,7 +529,7 @@ button.nav-link:hover {
 }
 .projects-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(44rem, 1fr));
+  grid-template-columns: repeat(1, 1fr);
   gap: 3.5rem;
   width: 96%;
   margin: auto;
@@ -559,10 +559,9 @@ button.nav-link:hover {
 .project-image {
   flex: 1.5;
   height: auto;
-  min-height: 13rem;
+
   margin-bottom: 1.5rem;
   border-radius: var(--radius-4);
-  overflow: visible;
 }
 .project-text {
   flex: 1.5;
@@ -1068,6 +1067,15 @@ button.nav-link:hover {
 }
 
 @media screen and (max-width: 990px) {
+  .project-card {
+    flex-direction: column;
+  }
+  .project-description {
+    font-size: 18px;
+  }
+  .project-description > * {
+    font-size: 18px;
+  }
   #nav-menu {
     justify-content: space-between;
     width: 100%;
@@ -1239,6 +1247,16 @@ button.nav-link:hover {
 }
 
 @media screen and (max-width: 500px) {
+  .project-card {
+    flex-direction: column;
+  }
+  .project-image {
+    width: 100%;
+  }
+  .projet-image img {
+    width: 100%;
+    object-fit: cover;
+  }
   #nav-menu > .nav-links > .nav-link-logo {
     display: block;
   }
