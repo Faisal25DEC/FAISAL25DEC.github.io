@@ -423,7 +423,7 @@ const downloadFile = () => {
   const link = document.createElement("a");
 
   window.open(
-    "https://drive.google.com/file/d/1aiL7qjKAMfnmBYn4rJ-2Jw5kZpBun_4u/view?usp=sharing",
+    "https://1drv.ms/b/s!AgsMdCh999Ibh3c2ROOQkmIBh8Fp?e=ZN5MfS",
     "_blank"
   );
 };
