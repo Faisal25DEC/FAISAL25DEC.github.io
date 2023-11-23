@@ -634,6 +634,26 @@ button.nav-link:hover {
   height: 20px;
   width: 20px;
 }
+
+.project-view-more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+.project-view-more button {
+  padding: 1rem 1.5rem;
+  border: none;
+  background-color: #1582da;
+  color: white;
+  border-radius: 18px;
+  font-weight: 600;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.project-view-more button:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
 @keyframes identifier {
   to {
     opacity: 1;

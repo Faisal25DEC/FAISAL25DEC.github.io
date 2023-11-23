@@ -46,6 +46,7 @@ const items = [
       "./assets/json-server.png",
     ],
     live: "https://adventourr-masai.netlify.app/",
+    github: "https://github.com/Faisal25DEC/adventour",
   },
   {
     id: 2,
@@ -64,6 +65,7 @@ const items = [
       "./assets/redux.svg",
     ],
     live: "https://medium-blog-app-pi.vercel.app/",
+    github: "https://github.com/Faisal25DEC/BlogTour",
   },
   {
     id: 5,
@@ -78,6 +80,21 @@ const items = [
       "./assets/firebase.svg",
     ],
     live: "https://twitter-clone-faisal25dec.vercel.app/",
+    github: "https://github.com/Faisal25DEC/Socialms-twitter-inspired",
+  },
+  {
+    id: 6,
+    title: "Jotion",
+    img: "./assets/jotion-collage.png",
+    desc: `A Note management platform inspired by Notion.com that incoporating features like <b>Nested children notes</b>, <b>Note smart restore</b>, publishing, deleting and full authorization and authentication`,
+    techStack: [
+      "./assets/next.svg",
+      "./assets/convex.svg",
+      "./assets/clerk.webp",
+      "./assets/edgestore.png",
+    ],
+    live: "https://note-management-platform.vercel.app/",
+    github: "https://github.com/Faisal25DEC/note-management-platform",
   },
   {
     id: 3,
@@ -94,6 +111,7 @@ const items = [
       "./assets/firebase.svg",
     ],
     live: "https://alcazar-masai.netlify.app/pages/product",
+    github: "https://github.com/Faisal25DEC/Alcazar-Travel-Agency",
   },
   {
     id: 4,
@@ -111,6 +129,7 @@ const items = [
       "./assets/redux.svg",
     ],
     live: "https://instaclonevi.netlify.app/",
+    github: "https://github.com/Faisal25DEC/Insta_Social",
   },
 ];
 
@@ -136,7 +155,7 @@ items.forEach((item, index) => {
   <div class="project-link-tech-stack-wrapper">
     <div class="project-links">
       <a
-        href="https://github.com/Faisal25DEC/Alcazar-Travel-Agency"
+        href=${item.github}
         target="_blank"
         class="project-github-link"
         ><img src="./assets/github.png" alt="" /><span>Github</span></a
@@ -171,6 +190,8 @@ const frontEndItems = [
       "./assets/js.png",
       "./assets/local-storage.png",
     ],
+    live: "https://gilded-vacherin-2e78d2.netlify.app/",
+    github: "https://github.com/Faisal25DEC/Myntra-Clone",
   },
   {
     id: 2,
@@ -183,6 +204,8 @@ const frontEndItems = [
       "./assets/js.svg",
       "./assets/local-storage.png",
     ],
+    live: "https://monumental-melba-e8c79d.netlify.app/index.html",
+    github: "https://github.com/Faisal25DEC/open-source-project",
   },
   {
     id: 3,
@@ -199,6 +222,7 @@ const frontEndItems = [
       "./assets/firebase.svg",
     ],
     live: "https://alcazar-masai.netlify.app/pages/product",
+    github: "https://github.com/Faisal25DEC/Alcazar-Travel-Agency",
   },
 ];
 
@@ -222,7 +246,7 @@ frontEndItems.forEach((item) => {
   <div class="project-link-tech-stack-wrapper">
     <div class="project-links">
       <a
-        href="https://github.com/Faisal25DEC/Alcazar-Travel-Agency"
+        href=${item.github}
         target="_blank"
         class="project-github-link"
         ><img src="./assets/github.png" alt="" /><span>Github</span></a
@@ -247,6 +271,20 @@ frontEndItems.forEach((item) => {
 
 const fullStackItems = [
   {
+    id: 6,
+    title: "Jotion",
+    img: "./assets/jotion-collage.png",
+    desc: `A Note management platform inspired by Notion.com that incoporating features like <b>Nested children notes</b>, <b>Note smart restore</b>, publishing, deleting and full authorization and authentication`,
+    techStack: [
+      "./assets/next.svg",
+      "./assets/convex.svg",
+      "./assets/clerk.webp",
+      "./assets/edgestore.png",
+    ],
+    live: "https://note-management-platform.vercel.app/",
+    github: "https://github.com/Faisal25DEC/note-management-platform",
+  },
+  {
     id: 2,
     title: "BlogsTour.com",
     img: "./assets/medium-collage-1.png",
@@ -263,6 +301,7 @@ const fullStackItems = [
       "./assets/redux.svg",
     ],
     live: "https://medium-blog-app-pi.vercel.app/",
+    github: "https://github.com/Faisal25DEC/BlogTourv",
   },
   {
     id: 3,
@@ -277,6 +316,7 @@ const fullStackItems = [
       "./assets/firebase.svg",
     ],
     live: "https://twitter-clone-faisal25dec.vercel.app/",
+    github: "https://github.com/Faisal25DEC/Socialms-twitter-inspired",
   },
 
   {
@@ -295,6 +335,7 @@ const fullStackItems = [
       "./assets/redux.svg",
     ],
     live: "https://instaclonevi.netlify.app/",
+    github: "https://github.com/Faisal25DEC/Insta_Social",
   },
 ];
 
@@ -318,7 +359,7 @@ fullStackItems.forEach((item) => {
   <div class="project-link-tech-stack-wrapper">
     <div class="project-links">
       <a
-        href="https://github.com/Faisal25DEC/Alcazar-Travel-Agency"
+        href=${item.github}
         target="_blank"
         class="project-github-link"
         ><img src="./assets/github.png" alt="" /><span>Github</span></a
