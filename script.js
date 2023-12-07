@@ -68,6 +68,19 @@ const items = [
     github: "https://github.com/Faisal25DEC/BlogTour",
   },
   {
+    id: 7,
+    title: "Educom",
+    img: "./assets/educom-collage.png",
+    desc: "A beautifully designed responsive education platform with real-time features like <b>Course Ratings</b>, <b>Real-Time Progress Tracking</b>, <b>Course Dashboard</b> and personalized learning dashboard.",
+    techStack: [
+      "./assets/react.svg",
+      "./assets/firebase.svg",
+      "./assets/tailwind.svg",
+    ],
+    live: "https://educom-frontend.vercel.app/",
+    github: "https://github.com/Faisal25DEC/educom-frontend",
+  },
+  {
     id: 5,
     title: "Socialms",
     img: "./assets/twitter-collage-2.png",
