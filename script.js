@@ -50,11 +50,11 @@ const items = [
   },
   {
     id: 2,
-    title: "BlogsTour.com",
+    title: "AI - BlogsTour",
     img: "./assets/medium-collage-1.png",
     desc: `
         A Complete <b>MERN Stack</b> blog website similar to <b>Medium.com</b>
-        which supports CRUD operations and have entirely user specific features
+        which supports, <b>AI Blog Generation</b>, CRUD operations and have entirely user specific features
         like comments, like, unlike, follows etc.
       `,
     techStack: [
@@ -144,6 +144,19 @@ const items = [
     live: "https://instaclonevi.netlify.app/",
     github: "https://github.com/Faisal25DEC/Insta_Social",
   },
+  {
+    id: 8,
+    title: "Roobet",
+    img: "./assets/roobet.png",
+    desc: "Beautifully animated Home page of roobet.com. It's complex front-end design with complete resopnsiveness and beautifull image hover animations",
+    techStack: [
+      "./assets/react.png",
+      "./assets/tailwind.svg",
+      "./assets/bootstrap.svg",
+    ],
+    live: "https://roobet.vercel.app/",
+    github: "https://github.com/Faisal25DEC/Roobet",
+  },
 ];
 
 items.forEach((item, index) => {
@@ -192,6 +205,19 @@ items.forEach((item, index) => {
 });
 
 const frontEndItems = [
+  {
+    id: 4,
+    title: "Roobet",
+    img: "./assets/roobet.png",
+    desc: "Beautifully animated Home page of roobet.com. It's complex front-end design with complete resopnsiveness and beautifull image hover animations",
+    techStack: [
+      "./assets/react.png",
+      "./assets/tailwind.svg",
+      "./assets/bootstrap.svg",
+    ],
+    live: "https://roobet.vercel.app/",
+    github: "https://github.com/Faisal25DEC/Roobet",
+  },
   {
     id: 1,
     title: "Myntra Clone",
